@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "life",
+	"version": "${version}",
+	"name": "LIFE SMP",
+	"description": "Official mod for the LIFE SMP. ",
+	"authors": [
+		"StrangeGuyPerson"
+	],
+	"contact": {
+		"homepage": "https://github.com/Strange-GuyPerson",
+		"sources": ""
+	},
+	"license": "MIT",
+	"icon": "assets/life/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"strangeguyperson.life.LIFESMP"
+		],
+		"fabric-datagen": [
+			"strangeguyperson.life.datagen.LIFESMPDataGenerator"
+		]
+	},
+	"mixins": [
+		"life.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
